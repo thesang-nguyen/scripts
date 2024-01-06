@@ -1,11 +1,11 @@
 #!/bin/bash
 
-while getopts name:n:p: flag
+while getopts name:node:port: flag
 do
     case "${flag}" in
         name) name=${OPTARG};;
-        n) node=${OPTARG};;
-        p) port=${OPTARG};;
+        node) node=${OPTARG};;
+        port) port=${OPTARG};;
     esac
 done
 
