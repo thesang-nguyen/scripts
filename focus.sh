@@ -11,7 +11,7 @@ fi
 if [ -z "$FOCUS" ]; then
   dconf write /org/gnome/shell/extensions/panel-date-format/format "'%b %d  ( %H:%M )'"
 else
-  dconf write /org/gnome/shell/extensions/panel-date-format/format "'%b %d  %H:%M   [ Focus: $FOCUS ]'"
+  dconf write /org/gnome/shell/extensions/panel-date-format/format "'%b %d  %H:%M   [ $FOCUS ]'"
 fi
 
 echo "Focus set to: $FOCUS"
